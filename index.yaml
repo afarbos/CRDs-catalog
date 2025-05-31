@@ -1531,6 +1531,10 @@ cloud.google.com:
     filename: cloud.google.com/backendconfig_v1.json
     kind: backendconfig
     name: backendconfig_v1
+  - apiVersion: cloud.google.com/v1
+    filename: cloud.google.com/computeclass_v1.json
+    kind: ComputeClass
+    name: computeclass_v1
 cloud.grafana.crossplane.io:
   - apiVersion: cloud.grafana.crossplane.io/v1alpha1
     filename: cloud.grafana.crossplane.io/stack_v1alpha1.json
@@ -2364,6 +2368,26 @@ datadoghq.com:
     filename: datadoghq.com/datadogpodautoscaler_v1alpha1.json
     kind: DatadogPodAutoscaler
     name: datadogpodautoscaler_v1alpha1
+  - apiVersion: datadoghq.com/v1alpha1
+    filename: datadoghq.com/datadogagentprofile_v1alpha1.json
+    kind: DatadogAgentProfile
+    name: datadogagentprofile_v1alpha1
+  - apiVersion: datadoghq.com/v1alpha1
+    filename: datadoghq.com/datadogslo_v1alpha1.json
+    kind: DatadogSLO
+    name: datadogslo_v1alpha1
+  - apiVersion: datadoghq.com/v1alpha1
+    filename: datadoghq.com/datadogdashboard_v1alpha1.json
+    kind: DatadogDashboard
+    name: datadogdashboard_v1alpha1
+  - apiVersion: datadoghq.com/v1alpha1
+    filename: datadoghq.com/datadoggenericresource_v1alpha1.json
+    kind: DatadogGenericResource
+    name: datadoggenericresource_v1alpha1
+  - apiVersion: datadoghq.com/v1alpha2
+    filename: datadoghq.com/datadogpodautoscaler_v1alpha2.json
+    kind: DatadogPodAutoscaler
+    name: datadogpodautoscaler_v1alpha2
 dataflow.cnrm.cloud.google.com:
   - apiVersion: dataflow.cnrm.cloud.google.com/v1beta1
     filename: dataflow.cnrm.cloud.google.com/dataflowflextemplatejob_v1beta1.json
@@ -2886,6 +2910,11 @@ essentialcontacts.cnrm.cloud.google.com:
     filename: essentialcontacts.cnrm.cloud.google.com/essentialcontactscontact_v1alpha1.json
     kind: essentialcontactscontact
     name: essentialcontactscontact_v1alpha1
+etcd.k0sproject.io:
+  - apiVersion: etcd.k0sproject.io/v1beta1
+    filename: etcd.k0sproject.io/etcdmember_v1beta1.json
+    kind: EtcdMember
+    name: etcdmember_v1beta1
 eventarc.cnrm.cloud.google.com:
   - apiVersion: eventarc.cnrm.cloud.google.com/v1beta1
     filename: eventarc.cnrm.cloud.google.com/eventarctrigger_v1beta1.json
@@ -4566,6 +4595,26 @@ infrastructure.cluster.x-k8s.io:
     filename: infrastructure.cluster.x-k8s.io/gcpcluster_v1alpha4.json
     kind: GCPCluster
     name: gcpcluster_v1alpha4
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/dockermachinepooltemplate_v1beta1.json
+    kind: DockerMachinePoolTemplate
+    name: dockermachinepooltemplate_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/devmachinetemplate_v1beta1.json
+    kind: DevMachineTemplate
+    name: devmachinetemplate_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/devmachine_v1beta1.json
+    kind: DevMachine
+    name: devmachine_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/devcluster_v1beta1.json
+    kind: DevCluster
+    name: devcluster_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/devclustertemplate_v1beta1.json
+    kind: DevClusterTemplate
+    name: devclustertemplate_v1beta1
 ingress.oraclecloud.com:
   - apiVersion: ingress.oraclecloud.com/v1beta1
     filename: ingress.oraclecloud.com/ingressclassparameters_v1beta1.json
@@ -4580,6 +4629,14 @@ ipam.cluster.x-k8s.io:
     filename: ipam.cluster.x-k8s.io/ipaddress_v1alpha1.json
     kind: IPAddress
     name: ipaddress_v1alpha1
+  - apiVersion: ipam.cluster.x-k8s.io/v1beta1
+    filename: ipam.cluster.x-k8s.io/ipaddress_v1beta1.json
+    kind: IPAddress
+    name: ipaddress_v1beta1
+  - apiVersion: ipam.cluster.x-k8s.io/v1beta1
+    filename: ipam.cluster.x-k8s.io/ipaddressclaim_v1beta1.json
+    kind: IPAddressClaim
+    name: ipaddressclaim_v1beta1
 isindir.github.com:
   - apiVersion: isindir.github.com/v1alpha3
     filename: isindir.github.com/sopssecret_v1alpha3.json
@@ -4832,6 +4889,39 @@ kafka.strimzi.io:
     filename: kafka.strimzi.io/kafkanodepool_v1beta2.json
     kind: kafkanodepool
     name: kafkanodepool_v1beta2
+kargo.akuity.io:
+  - apiVersion: kargo.akuity.io/v1alpha1
+    filename: kargo.akuity.io/promotion_v1alpha1.json
+    kind: Promotion
+    name: promotion_v1alpha1
+  - apiVersion: kargo.akuity.io/v1alpha1
+    filename: kargo.akuity.io/projectconfig_v1alpha1.json
+    kind: ProjectConfig
+    name: projectconfig_v1alpha1
+  - apiVersion: kargo.akuity.io/v1alpha1
+    filename: kargo.akuity.io/warehouse_v1alpha1.json
+    kind: Warehouse
+    name: warehouse_v1alpha1
+  - apiVersion: kargo.akuity.io/v1alpha1
+    filename: kargo.akuity.io/freight_v1alpha1.json
+    kind: Freight
+    name: freight_v1alpha1
+  - apiVersion: kargo.akuity.io/v1alpha1
+    filename: kargo.akuity.io/stage_v1alpha1.json
+    kind: Stage
+    name: stage_v1alpha1
+  - apiVersion: kargo.akuity.io/v1alpha1
+    filename: kargo.akuity.io/project_v1alpha1.json
+    kind: Project
+    name: project_v1alpha1
+  - apiVersion: kargo.akuity.io/v1alpha1
+    filename: kargo.akuity.io/clusterpromotiontask_v1alpha1.json
+    kind: clusterpromotiontask
+    name: clusterpromotiontask_v1alpha1
+  - apiVersion: kargo.akuity.io/v1alpha1
+    filename: kargo.akuity.io/promotiontask_v1alpha1.json
+    kind: promotiontask
+    name: promotiontask_v1alpha1
 karpenter.k8s.aws:
   - apiVersion: karpenter.k8s.aws/v1alpha1
     filename: karpenter.k8s.aws/awsnodetemplate_v1alpha1.json
@@ -5494,6 +5584,43 @@ memorydb.services.k8s.aws:
     filename: memorydb.services.k8s.aws/user_v1alpha1.json
     kind: User
     name: user_v1alpha1
+metal3.io:
+  - apiVersion: metal3.io/v1alpha1
+    filename: metal3.io/hostfirmwarecomponents_v1alpha1.json
+    kind: HostFirmwareComponents
+    name: hostfirmwarecomponents_v1alpha1
+  - apiVersion: metal3.io/v1alpha1
+    filename: metal3.io/dataimage_v1alpha1.json
+    kind: DataImage
+    name: dataimage_v1alpha1
+  - apiVersion: metal3.io/v1alpha1
+    filename: metal3.io/firmwareschema_v1alpha1.json
+    kind: FirmwareSchema
+    name: firmwareschema_v1alpha1
+  - apiVersion: metal3.io/v1alpha1
+    filename: metal3.io/hostfirmwaresettings_v1alpha1.json
+    kind: HostFirmwareSettings
+    name: hostfirmwaresettings_v1alpha1
+  - apiVersion: metal3.io/v1alpha1
+    filename: metal3.io/hardwaredata_v1alpha1.json
+    kind: HardwareData
+    name: hardwaredata_v1alpha1
+  - apiVersion: metal3.io/v1alpha1
+    filename: metal3.io/bmceventsubscription_v1alpha1.json
+    kind: BMCEventSubscription
+    name: bmceventsubscription_v1alpha1
+  - apiVersion: metal3.io/v1alpha1
+    filename: metal3.io/preprovisioningimage_v1alpha1.json
+    kind: PreprovisioningImage
+    name: preprovisioningimage_v1alpha1
+  - apiVersion: metal3.io/v1alpha1
+    filename: metal3.io/baremetalhost_v1alpha1.json
+    kind: BareMetalHost
+    name: baremetalhost_v1alpha1
+  - apiVersion: metal3.io/v1alpha1
+    filename: metal3.io/hostupdatepolicy_v1alpha1.json
+    kind: HostUpdatePolicy
+    name: hostupdatepolicy_v1alpha1
 metallb.io:
   - apiVersion: metallb.io/v1beta1
     filename: metallb.io/ipaddresspool_v1beta1.json
@@ -5637,6 +5764,59 @@ monitoring.coreos.com:
     filename: monitoring.coreos.com/prometheusagent_v1alpha1.json
     kind: PrometheusAgent
     name: prometheusagent_v1alpha1
+monitoring.googleapis.com:
+  - apiVersion: monitoring.googleapis.com/v1alpha1
+    filename: monitoring.googleapis.com/rules_v1alpha1.json
+    kind: Rules
+    name: rules_v1alpha1
+  - apiVersion: monitoring.googleapis.com/v1alpha1
+    filename: monitoring.googleapis.com/clusterpodmonitoring_v1alpha1.json
+    kind: ClusterPodMonitoring
+    name: clusterpodmonitoring_v1alpha1
+  - apiVersion: monitoring.googleapis.com/v1
+    filename: monitoring.googleapis.com/podmonitoring_v1.json
+    kind: PodMonitoring
+    name: podmonitoring_v1
+  - apiVersion: monitoring.googleapis.com/v1alpha1
+    filename: monitoring.googleapis.com/clusterrules_v1alpha1.json
+    kind: ClusterRules
+    name: clusterrules_v1alpha1
+  - apiVersion: monitoring.googleapis.com/v1
+    filename: monitoring.googleapis.com/clusterrules_v1.json
+    kind: ClusterRules
+    name: clusterrules_v1
+  - apiVersion: monitoring.googleapis.com/v1alpha1
+    filename: monitoring.googleapis.com/operatorconfig_v1alpha1.json
+    kind: OperatorConfig
+    name: operatorconfig_v1alpha1
+  - apiVersion: monitoring.googleapis.com/v1
+    filename: monitoring.googleapis.com/rules_v1.json
+    kind: Rules
+    name: rules_v1
+  - apiVersion: monitoring.googleapis.com/v1alpha1
+    filename: monitoring.googleapis.com/podmonitoring_v1alpha1.json
+    kind: PodMonitoring
+    name: podmonitoring_v1alpha1
+  - apiVersion: monitoring.googleapis.com/v1alpha1
+    filename: monitoring.googleapis.com/globalrules_v1alpha1.json
+    kind: GlobalRules
+    name: globalrules_v1alpha1
+  - apiVersion: monitoring.googleapis.com/v1
+    filename: monitoring.googleapis.com/clusternodemonitoring_v1.json
+    kind: ClusterNodeMonitoring
+    name: clusternodemonitoring_v1
+  - apiVersion: monitoring.googleapis.com/v1
+    filename: monitoring.googleapis.com/operatorconfig_v1.json
+    kind: OperatorConfig
+    name: operatorconfig_v1
+  - apiVersion: monitoring.googleapis.com/v1
+    filename: monitoring.googleapis.com/globalrules_v1.json
+    kind: GlobalRules
+    name: globalrules_v1
+  - apiVersion: monitoring.googleapis.com/v1
+    filename: monitoring.googleapis.com/clusterpodmonitoring_v1.json
+    kind: ClusterPodMonitoring
+    name: clusterpodmonitoring_v1
 monitoring.grafana.com:
   - apiVersion: monitoring.grafana.com/v1alpha1
     filename: monitoring.grafana.com/logsinstance_v1alpha1.json
@@ -8029,6 +8209,15 @@ vshn.appcat.vshn.io:
     filename: vshn.appcat.vshn.io/xvshnminio_v1.json
     kind: XVSHNMinio
     name: xvshnminio_v1
+wgpolicyk8s.io:
+  - apiVersion: wgpolicyk8s.io/v1alpha2
+    filename: wgpolicyk8s.io/policyreport_v1alpha2.json
+    kind: PolicyReport
+    name: policyreport_v1alpha2
+  - apiVersion: wgpolicyk8s.io/v1alpha2
+    filename: wgpolicyk8s.io/clusterpolicyreport_v1alpha2.json
+    kind: ClusterPolicyReport
+    name: clusterpolicyreport_v1alpha2
 workflows.cnrm.cloud.google.com:
   - apiVersion: workflows.cnrm.cloud.google.com/v1alpha1
     filename: workflows.cnrm.cloud.google.com/workflowsworkflow_v1alpha1.json
